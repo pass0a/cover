@@ -1,0 +1,38 @@
+{
+	"name": "@passoa/cover",
+	"version": "1.0.0",
+	"description": "cover test modules@passoa",
+	"main": "index.js",
+	"files": [ "/dist/*.js", "/dist/*/*.d.ts", "/cli.js" ],
+	"repository": "git+https://github.com/pass0a/cover.git",
+	"bugs": {
+		"url": "https://github.com/pass0a/cover/issues"
+	},
+	"homepage": "https://github.com/pass0a/cover#readme",
+	"scripts": {
+		"build": "rimraf lib/ && tsc -p src",
+		"dev": "rimraf lib/ && tsc -w -p src",
+		"test": "node dist/index.js -b"
+	},
+	"author": "losper",
+	"license": "MIT",
+	"bin": {
+		"cover": "./cli.js"
+	},
+	"dependencies": {
+		"fs-extra": "^8.1.0",
+		"minimist": "^1.2.0",
+		"nyc": "^15.0.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"@types/fs-extra": "^8.0.1",
+		"@types/minimist": "^1.2.0",
+		"@types/node": "^12.12.29",
+		"@types/tape": "^4.2.33",
+		"cross-env": "^6.0.3",
+		"rimraf": "^2.6.3",
+		"typescript": "^3.5.3"
+	}
+}
