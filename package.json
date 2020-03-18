@@ -21,7 +21,7 @@
 	},
 	"dependencies": {
 		"fs-extra": "^8.1.0",
-		"minimist": "^1.2.0",
+		"minimist": "^1.2.2",
 		"nyc": "^15.0.0"
 	},
 	"devDependencies": {
